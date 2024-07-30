@@ -1,0 +1,42 @@
+header a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: 2.2s;
+}
+
+header a:hover {
+  color: #fff;
+  transform: scale(1.09);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+nav ul li a:hover {
+  color: #00f2ff;
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00ffff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
