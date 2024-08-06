@@ -101,34 +101,53 @@ h2.titulo {
 }
 
 /*Estilo das Skills*/
-.content {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: center;
-  gap: 2.5rem;
-  margin-top: 5rem;
+.skills-slider {
+  overflow: hidden;
+  position: relative;
+  height: 120px;
+  width: 100%;
+}
+
+.skills-slider-box {
+  display: flex;
+  position: absolute;
+  gap: 1px;
+  padding: 20px;
+  width: 100%;
+}
+
+.skills-items {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100%;
+  animation: scroll 15s linear infinite;
+  animation-play-state: running;
 }
 
 .skills-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  margin: auto;
-  min-width: 300px;
-  max-height: 200px;
-  min-height: 200px;
-  text-align: center;
-  border-radius: 30px;
-  transition: all 0.45s ease;
-  margin-bottom: 60px;
+  -webkit-transform: translateZ(0);
+  flex: 1;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
-.skills-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #ffffff8a;
+/* Pausar animação ao passar o mouse */
+.skills-slider:hover .skills-items {
+  animation-play-state: paused;
 }
+
+/* Animação para rolar da esquerda para a direita */
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /*Estilo do About-me*/
 .btn-social button {
   margin: 15px 8px;
@@ -223,12 +242,26 @@ h2.titulo {
   .layer {
     padding: 0 20px;
   }
+
+  .skills-slider-box {
+    gap: 10px;
+  }
+
+  .skills-box {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skills-items {
+    gap: 10px;
+    animation: scroll 5s linear infinite;
+  }
 }
 
 /* Estilos para notebooks */
 @media (min-width: 641px) and (max-width: 1280px) {
   .row img {
-    max-width: 350px;
+    max-width: 370px;
     min-height: 300px;
     max-height: 300px;
   }
@@ -237,5 +270,19 @@ h2.titulo {
     padding: 0 30px;
     font-size: 0.75rem /* 12px */;
     line-height: 1rem;
+  }
+
+  .skills-slider-box {
+    gap: 20px;
+  }
+
+  .skills-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skills-items {
+    gap: 10px;
+    animation: scroll 5s linear infinite;
   }
 }

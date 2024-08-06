@@ -32,7 +32,6 @@
             <nav class="nav hidden md:block">
                 <ul>
                     <li class="nav-link"><a href="#home">Home</a></li>
-                    <li class="nav-link"><a href="#skill">Skills</a></li>
                     <li class="nav-link"><a href="#about-me">About me</a></li>
                     <li class="nav-link"><a href="#projects">Projects</a></li>
                     <li class="nav-link"><a href="https://www.linkedin.com/in/matheus-rodrigues-da-silveira/" target="_blank">Contact</a></li>
@@ -47,16 +46,16 @@
 
     <main class="items-center justify-center px-4">  
 
-        <section class="p-4 sm:p-10 m-4 sm:m-10 flex flex-col items-center" id="home">
+        <section class="p-4 sm:p-10 m-4 sm:m-10 flex flex-col items-center h-screen" id="home">
             <div class="flex flex-col lg:flex-row justify-center items-center gap-24">
                 <div class="">
                     
-                    <h1 id="title_text" class="text-white text-3xl md:text-5xl mb-10">
+                    <h1 id="title_text" class="text-white text-3xl xl:text-3xl md:text-5xl max-sm:text-xl mb-10">
                         <span id="dynamic_text" class=""></span>
                     </h1>
                     
                     
-                    <p class="text-white text-lg mb-5"> Gostaria de manifestar meu interesse em oportunidades na área de tecnologia, onde possa aplicar minhas habilidades técnicas, experiência e paixão por inovação para contribuir significativamente para o sucesso da empresa.</p>
+                    <p class="text-white text-lg mb-5 max-sm:text-sm"> Gostaria de manifestar meu interesse em oportunidades na área de tecnologia, onde possa aplicar minhas habilidades técnicas, experiência e paixão por inovação para contribuir significativamente para o sucesso da empresa.</p>
                     
                     <div class="flex items-center space-x-4">
                         <div class="btn-contato">
@@ -78,51 +77,12 @@
             </div>
         </section>
             
-        <section class="p-4 sm:p-10 m-4 sm:m-10 flex-col items-center" id="skill">
-            <div class="justify-center items-center m-10 max-sm:m-0 max-lg:m-auto">
-                <h2 class="titulo">MY <span>SKILLS</span></h2>
-                <div class="content text-white max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:w-auto pc:w-[800px]">                                
-                    <div class="skills-box">
-                        <i class="text-ocean text-5xl fa-brands fa-html5"></i>
-                        <h3 class="text-sm m-4">Html</h3>
-                    </div>
-                            
-                    <div class="skills-box">
-                        <i class="text-ocean text-5xl fa-brands fa-css3"></i>
-                        <h3 class="text-sm m-4">Css</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <i class="text-ocean text-5xl fa-brands fa-js"></i>
-                        <h3 class="text-sm m-4">JavaScript</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <i class="text-ocean text-5xl fa-brands fa-react"></i>
-                        <h3 class="text-sm m-4">React</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <img src="/img/tailwind-css.svg" alt="tailwind" class="size-16">
-                        <h3 class="text-sm m-4">Tailwind</h3>
-                    </div>
-                    
-                    <div class="skills-box">
-                        <i class="text-ocean text-5xl fa-solid fa-computer"></i>
-                        <h3 class="text-sm m-4">Tech</h3>
-                    </div>
-
-                </div>
-            </div> 
-
-        </section>
-
-        <section class="p-4 sm:p-10 m-4 sm:m-10 flex flex-col items-center" id="about-me">
+        <section class="p-4 sm:p-10 m-4 sm:m-10 max-sm:flex flex-col items-center pc:h-screen" id="about-me">
             <div class="text-center mb-10">
                 <h2 class="text-white text-3xl md:text-5xl">About <span class="text-ocean">me.</span></h2>
             </div>
-
-            <div class="flex flex-col lg:flex-row items-center gap-10">
+            
+            <div class="flex flex-col lg:flex-row items-center">            
                 <div class="m-10 p-8">
                     <img src="./img/minhafoto.jfif" alt="foto" class="brightness-90 rounded-3xl max-w-sm max-sm:max-w-[300px]">
                 </div>
@@ -145,12 +105,88 @@
                             <button><i class="text-3xl fa-brands fa-github-alt"></i></button>
                         </a> 
                     </div>
-
                 </div>
             </div>
-        </section>
 
-        <section class="p-4 sm:p-10 m-4 sm:m-10 flex flex-col items-center" id="projects">
+            <div class="skills-slider p-4 sm:p-10 m-4 sm:m-10">
+                <div class="skills-slider-box"> 
+
+                    <div class="skills-items">                              
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-5xl text-white fa-solid fa-code"></i>
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-orange-500 text-5xl fa-brands fa-html5"></i>
+                        </div>
+                                
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-blue-500 text-5xl fa-brands fa-css3"></i>
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <img src="/img/tailwind-css.svg" alt="tailwind" class="size-14">
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-yellow-300 text-5xl fa-brands fa-square-js"></i>
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <img src="/img/ts.png" alt="tailwind" class="size-11">
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-ocean text-5xl fa-brands fa-react"></i>
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-green-400 text-5xl fa-solid fa-computer"></i>
+                        </div>
+        
+                    </div>
+                    <!-- Duplicar os itens de habilidades para criar o efeito infinito -->
+                    <div class="skills-items">                              
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-5xl text-white fa-solid fa-code "></i>
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-orange-500 text-5xl fa-brands fa-html5"></i>
+                        </div>
+                                
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-blue-500 text-5xl fa-brands fa-css3"></i>
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <img src="/img/tailwind-css.svg" alt="tailwind" class="size-14">
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-yellow-300 text-5xl fa-brands fa-square-js"></i>
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <img src="/img/ts.png" alt="tailwind" class="size-11">
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-ocean text-5xl fa-brands fa-react"></i>
+                        </div>
+        
+                        <div class="skills-box hover:scale-110 duration-500">
+                            <i class="text-green-400 text-5xl fa-solid fa-computer"></i>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+            </div> 
+              
+        </section>  
+
+        <section class="p-4 sm:p-16 m-4 sm:m-16 flex flex-col items-center" id="projects">
             <h2 class="titulo text-center text-2xl sm:text-3xl mb-6 sm:mb-10"><span>My</span> Projects.</h2>
 
             <div class="flex flex-col lg:flex-row items-center gap-6 sm:gap-10 justify-center w-full sm:w-auto">
