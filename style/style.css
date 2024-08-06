@@ -285,4 +285,8 @@ h2.titulo {
     gap: 10px;
     animation: scroll 5s linear infinite;
   }
+  #title_text {
+    font-size: 1.875rem /* 30px */;
+    line-height: 2.25rem /* 36px */;
+  }
 }
