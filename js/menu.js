@@ -9,15 +9,15 @@ const write = () => {
     if (text.length > index) {
         titleText.innerHTML += text.charAt(index) + '|';
         index++;
-        setTimeout(write, 150);
+        setTimeout(write, 180);
     } else if (index === text.length) {
-        titleText.innerHTML += '<span class="text-ocean">' + point + '</span>';
+        titleText.innerHTML += '<span class="bg-gradient-to-r from-sky-100 to-sky-300 bg-clip-text text-transparent">' + point + '</span>';
         index++;
         setTimeout(() => {
             index = 0;
             titleText.innerHTML = ''; 
             write();
-        }, 800);
+        }, 700);
     }
 }
 
