@@ -11,7 +11,7 @@ const write = () => {
         index++;
         setTimeout(write, 180);
     } else if (index === text.length) {
-        titleText.innerHTML += '<span class="bg-gradient-to-r from-sky-100 to-sky-300 bg-clip-text text-transparent">' + point + '</span>';
+        titleText.innerHTML += '<span class="bg-gradient-to-r text-white bg-clip-text text-transparent">' + point + '</span>';
         index++;
         setTimeout(() => {
             index = 0;
