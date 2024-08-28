@@ -669,6 +669,14 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
+.right-3\.5 {
+  right: 0.875rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -743,6 +751,10 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -757,6 +769,10 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.me-10 {
+  margin-inline-end: 2.5rem;
 }
 
 .me-2 {
@@ -892,8 +908,16 @@ video {
   height: 0.125rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-4\/5 {
@@ -2134,14 +2158,14 @@ video {
   padding-right: 0.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-9 {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
 }
 
 .py-2 {
@@ -2425,6 +2449,10 @@ video {
   -moz-osx-font-smoothing: auto;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -2694,6 +2722,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-150 {
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -2957,10 +2989,11 @@ body {
 
 /* Estilos para notebooks */
 
-@media (min-width: 640px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
   .row img {
-    max-width: 100%;
-    max-height: 200px;
+    max-width: 370px;
+    min-height: 300px;
+    max-height: 300px;
   }
 
   .layer {
@@ -3031,6 +3064,10 @@ body {
   }
 }
 
+.hover\:w-\[165px\]:hover {
+  width: 165px;
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -3080,6 +3117,16 @@ body {
   text-align: center;
 }
 
+.group\/button:hover .group-hover\/button\:-translate-x-2 {
+  --tw-translate-x: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group\/button:hover .group-hover\/button\:-translate-x-2\.5 {
+  --tw-translate-x: -0.625rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:bg-opacity-0 {
   --tw-bg-opacity: 0;
 }
@@ -3092,6 +3139,10 @@ body {
 
 .group:hover .group-hover\:to-blue-900 {
   --tw-gradient-to: #1e3a8a var(--tw-gradient-to-position);
+}
+
+.group\/button:hover .group-hover\/button\:opacity-100 {
+  opacity: 1;
 }
 
 @media not all and (min-width: 1024px) {
@@ -3147,11 +3198,6 @@ body {
   .max-sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .max-sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .max-sm\:text-sm {
