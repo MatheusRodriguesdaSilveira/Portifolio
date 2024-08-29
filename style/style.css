@@ -16,6 +16,22 @@ body {
   background-color: #000000;
 }
 
+@keyframes custom-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(15px); /* Altura do bounce reduzida */
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.bounce-custom {
+  animation: custom-bounce 1s infinite;
+}
+
 @keyframes flutuar {
   0% {
     top: 0;
