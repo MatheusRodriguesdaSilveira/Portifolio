@@ -19,11 +19,11 @@ body {
 @keyframes custom-bounce {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translateY(0px);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
   50% {
-    transform: translateY(15px); /* Altura do bounce reduzida */
+    transform: translateY(5px); /* Altura do bounce reduzida */
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
@@ -50,7 +50,7 @@ body {
 .img-topo-do-site {
   margin-left: 100px;
   margin-right: 100px;
-  width: 80%;
+  width: 100%;
 }
 
 .img-topo-do-site {
