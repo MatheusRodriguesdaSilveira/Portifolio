@@ -48,12 +48,6 @@ body {
 }
 
 .img-topo-do-site {
-  margin-left: 100px;
-  margin-right: 100px;
-  width: 100%;
-}
-
-.img-topo-do-site {
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
 }
@@ -231,9 +225,5 @@ body {
   .skills-items {
     gap: 10px;
     animation: scroll 5s linear infinite;
-  }
-  #title_text {
-    font-size: 1.875rem /* 30px */;
-    line-height: 2.25rem /* 36px */;
   }
 }
